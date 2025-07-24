@@ -2,7 +2,19 @@
 
 ## Description
 
-This tool remotely detects the version of the OWASP Core Rule Set (CRS) used by a ModSecurity WAF. It also identifies the configured paranoia level (PL) of the CRS, providing insights into the WAF's security posture without requiring local access.
+This is a proof-of-concept of malicious software running inside of ModSecurity
+WAF.
+
+Software has two main functions:
+ * Retrieving content of files.
+ * Running commands and retrieving output (remote shell).
+
+Additionaly, it includes these functions:
+ * Dynamic setting of control POST arguments names for harder detection.
+ * Logging disabling for harder detection (only for attacker's requests
+   identified by POST arguments names).
+ * All other rules disabling (only for attacker's requests
+   identified by POST arguments names).
 
 ## Prerequisities
 
